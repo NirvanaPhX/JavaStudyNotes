@@ -35,6 +35,7 @@
     dblclick     | keydown         | change      | resize
     mouseenter   | keyup           | focus       | scroll
     mouseleave   |                 | blur        | unload
+    
     EX:$("button").click(function(){
     });
 
