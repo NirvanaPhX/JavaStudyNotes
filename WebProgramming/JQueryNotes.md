@@ -8,7 +8,7 @@
         - AJAX
         - Utilities
 2. Use JQuery by download and include it in your file or use CDN
-    Here is Google CDN: //https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js
+    Here is Google CDN: https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js
 3. Basic Syntax: $(selector).action()
     EX: document ready Event:
     ```JQuery
