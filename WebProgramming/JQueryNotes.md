@@ -11,13 +11,13 @@
    Here is Google CDN: https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js
 ## Basic Syntax: $(selector).action()
    EX: document ready Event:
-    ```
-    $(document).ready(function(){
-    });
+  ```
+  $(document).ready(function(){
+  });
 
-    $(function() {
-    });
-    ```
+  $(function() {
+  });
+  ```
 ## Selectors: JQuery uses CSS Selectors to target elements.
   JQuery Selectors Reference:
   https://www.w3schools.com/jquery/jquery_ref_selectors.asp
@@ -54,12 +54,12 @@
         });
         ```
 ### Fading
-  Methods | Syntax |
-  --------|---------|-------------------------|
-   fadeIn()|$(selector).fadeIn(speed,callback)|fade in a hidden element
-   fadeOut()|$(selector).fadeOut(speed,callback)|fade out a visible element
-   fadeToggle()|$(selector).fadeToggle(speed,callback)|toggles between fadein and fadeout
-   fadeTo()|$(selector).fadeTo(speed,callback)|allows fading to a given opacity
+  Methods | Syntax | Description
+  --------|---------|-------------------------
+ fadeIn()|$(selector).fadeIn(speed,callback)|fade in a hidden element
+ fadeOut()|$(selector).fadeOut(speed,callback)|fade out a visible element
+ fadeToggle()|$(selector).fadeToggle(speed,callback)|toggles between fadein and fadeout
+ fadeTo()|$(selector).fadeTo(speed,callback)|allows fading to a given opacity
 
 
 3. Functions:
