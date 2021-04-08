@@ -1,5 +1,5 @@
 # JQuery 
-1. Introduction
+## Introduction
     JQuery is a lightweight JS library provides features like
         - HTML/DOM manipulation
         - CSS manipulation
@@ -7,9 +7,9 @@
         - Effects and animations
         - AJAX
         - Utilities
-2. Use JQuery by download and include it in your file or use CDN
+## Use JQuery by download and include it in your file or use CDN
     Here is Google CDN: https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js
-3. Basic Syntax: $(selector).action()
+## Basic Syntax: $(selector).action()
     EX: document ready Event:
     ```JQuery
     $(document).ready(function(){
@@ -18,7 +18,7 @@
     $(function() {
     });
     ```
-4. Selectors: JQuery uses CSS Selectors to target elements.
+## Selectors: JQuery uses CSS Selectors to target elements.
     JQuery Selectors Reference:
     https://www.w3schools.com/jquery/jquery_ref_selectors.asp
     - By Type: $("button"), $(document)
@@ -27,7 +27,7 @@
     - By className:nth-child(n): $(".className:nth-child(3)")
     - By target based on positions using :odd or :even, $(".className:odd")
 
-5. JQuery Syntax For Event
+## JQuery Syntax For Event
     Some common DOM events:
     Mouse Events | Keyboard Events | Form Events | Document/Window Events
     ------------ | --------------- |------------ |----------------------- 
@@ -38,6 +38,28 @@
     
     EX:$("button").click(function(){
     });
+
+## JQuery Effect
+### Hide and Show
+        hide and show HTML elements with the hide() and show() or toggle() methods:
+        Syntax: $(selector).hide(speed, callback);
+                $(selector).show(speed, callback);
+                // speed values: "slow", "fast" or milliseconds.
+        ```
+        $("#hide").click(() => {
+            $("p").hide();
+        });
+        $("#show").click(() => {
+            $("p").show();
+        });
+### Fading
+    Methods | Syntax |
+    --------|---------|-------------------------|
+     fadeIn()|$(selector).fadeIn(speed,callback)|fade in a hidden element
+     fadeOut()|$(selector).fadeOut(speed,callback)|fade out a visible element
+     fadeToggle()|$(selector).fadeToggle(speed,callback)|toggles between fadein and fadeout
+     fadeTo()|$(selector).fadeTo(speed,callback)|allows fading to a given opacity
+
 
 3. Functions:
     - addClass(), removeClass()
