@@ -1,17 +1,17 @@
 # JQuery 
 ## Introduction
-    JQuery is a lightweight JS library provides features like
-        - HTML/DOM manipulation
-        - CSS manipulation
-        - HTML event handle
-        - Effects and animations
-        - AJAX
-        - Utilities
+   JQuery is a lightweight JS library provides features like
+      - HTML/DOM manipulation
+      - CSS manipulation
+      - HTML event handle
+      - Effects and animations
+      - AJAX
+      - Utilities
 ## Use JQuery by download and include it in your file or use CDN
-    Here is Google CDN: https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js
+   Here is Google CDN: https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js
 ## Basic Syntax: $(selector).action()
-    EX: document ready Event:
-    ```JQuery
+   EX: document ready Event:
+    ```
     $(document).ready(function(){
     });
 
@@ -19,32 +19,32 @@
     });
     ```
 ## Selectors: JQuery uses CSS Selectors to target elements.
-    JQuery Selectors Reference:
-    https://www.w3schools.com/jquery/jquery_ref_selectors.asp
-    - By Type: $("button"), $(document)
-    - By Class: $(".classname")
-    - By ID: $("#IDname")
-    - By className:nth-child(n): $(".className:nth-child(3)")
-    - By target based on positions using :odd or :even, $(".className:odd")
+  JQuery Selectors Reference:
+  https://www.w3schools.com/jquery/jquery_ref_selectors.asp
+  - By Type: $("button"), $(document)
+  - By Class: $(".classname")
+  - By ID: $("#IDname")
+  - By className:nth-child(n): $(".className:nth-child(3)")
+  - By target based on positions using :odd or :even, $(".className:odd")
 
 ## JQuery Syntax For Event
-    Some common DOM events:
-    Mouse Events | Keyboard Events | Form Events | Document/Window Events
-    ------------ | --------------- |------------ |----------------------- 
-    click        | keypress        | submit      | load
-    dblclick     | keydown         | change      | resize
-    mouseenter   | keyup           | focus       | scroll
-    mouseleave   |                 | blur        | unload
+   Some common DOM events:
+   Mouse Events | Keyboard Events | Form Events | Document/Window Events
+   ------------ | --------------- |------------ |----------------------- 
+   click        | keypress        | submit      | load
+   dblclick     | keydown         | change      | resize
+   mouseenter   | keyup           | focus       | scroll
+   mouseleave   |                 | blur        | unload
     
-    EX:$("button").click(function(){
+   EX:$("button").click(function(){
     });
 
 ## JQuery Effect
 ### Hide and Show
-        hide and show HTML elements with the hide() and show() or toggle() methods:
-        Syntax: $(selector).hide(speed, callback);
-                $(selector).show(speed, callback);
-                // speed values: "slow", "fast" or milliseconds.
+   hide and show HTML elements with the hide() and show() or toggle() methods:
+   Syntax: $(selector).hide(speed, callback);
+           $(selector).show(speed, callback);
+           // speed values: "slow", "fast" or milliseconds.
         ```
         $("#hide").click(() => {
             $("p").hide();
@@ -52,13 +52,14 @@
         $("#show").click(() => {
             $("p").show();
         });
+        ```
 ### Fading
-    Methods | Syntax |
-    --------|---------|-------------------------|
-     fadeIn()|$(selector).fadeIn(speed,callback)|fade in a hidden element
-     fadeOut()|$(selector).fadeOut(speed,callback)|fade out a visible element
-     fadeToggle()|$(selector).fadeToggle(speed,callback)|toggles between fadein and fadeout
-     fadeTo()|$(selector).fadeTo(speed,callback)|allows fading to a given opacity
+  Methods | Syntax |
+  --------|---------|-------------------------|
+   fadeIn()|$(selector).fadeIn(speed,callback)|fade in a hidden element
+   fadeOut()|$(selector).fadeOut(speed,callback)|fade out a visible element
+   fadeToggle()|$(selector).fadeToggle(speed,callback)|toggles between fadein and fadeout
+   fadeTo()|$(selector).fadeTo(speed,callback)|allows fading to a given opacity
 
 
 3. Functions:
