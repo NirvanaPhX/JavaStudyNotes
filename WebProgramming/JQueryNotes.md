@@ -1,5 +1,5 @@
 # JQuery 
-##1. Introduction
+1. Introduction
     JQuery is a lightweight JS library provides features like
         - HTML/DOM manipulation
         - CSS manipulation
@@ -7,10 +7,9 @@
         - Effects and animations
         - AJAX
         - Utilities
-##2. Use JQuery by download and include it in your file or use CDN
+2. Use JQuery by download and include it in your file or use CDN
     Here is Google CDN: https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js
-##3. Basic Syntax 
-    $(selector).action()
+3. Basic Syntax: $(selector).action()
     EX: document ready Event:
     ```JQuery
     $(document).ready(function(){
@@ -19,8 +18,7 @@
     $(function() {
     });
     ```
-##4. Selectors: 
-    JQuery uses CSS Selectors to target elements.
+4. Selectors: JQuery uses CSS Selectors to target elements.
     JQuery Selectors Reference:
     https://www.w3schools.com/jquery/jquery_ref_selectors.asp
     - By Type: $("button"), $(document)
@@ -29,7 +27,7 @@
     - By className:nth-child(n): $(".className:nth-child(3)")
     - By target based on positions using :odd or :even, $(".className:odd")
 
-##5. JQuery Syntax For Event
+5. JQuery Syntax For Event
     Some common DOM events:
     Mouse Events | Keyboard Events | Form Events | Document/Window Events
     ------------ | --------------- |------------ |----------------------- 
@@ -41,7 +39,7 @@
     EX:$("button").click(function(){
     });
 
-##6. Functions:
+3. Functions:
     - addClass(), removeClass()
     - .html() to add HTML tags and text within an element
         - $("h1").html("Hello World");
