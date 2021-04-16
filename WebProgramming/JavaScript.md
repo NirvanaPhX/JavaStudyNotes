@@ -80,3 +80,70 @@ Object.defineProperties(o, {
     'c':{set:function(x) {this.a = x/2;}}
 })
 ```
+
+## Functions
+### Higher-Order Functions
+Functions that operate on other functions, either by taking them as arguments or by returning them, are called hiht-order functions.
+It allows abstraction over actions
+EX:
+1. 
+```
+function greaterThan(n) {
+  return m => m > n;
+}
+let greaterThan10 = greaterThan(10);
+console.log(greaterThan10(11));
+// → true
+```
+2. 
+```
+function noisy(f) {
+  return (...args) => {
+    console.log("calling with", args);
+    let result = f(...args);
+    console.log("called with", args, ", returned", result);
+    return result;
+  };
+}
+noisy(Math.min)(3, 2, 1);
+// → calling with [3, 2, 1]
+// → called with [3, 2, 1] , returned 1
+```
+### Filtering Array using filer()
+```
+function filter(array, test) {
+  let passed = [];
+  for (let element of array) {
+    if (test(element)) {
+      passed.push(element);
+    }
+  }
+  return passed;
+}
+
+console.log(filter(SCRIPTS, script => script.living));
+```
+The test argument is a function takes one object parameter and returns a boolean value. We can use arrow functino to represent this.
+The filter function creates a new function instead of deleting elements from the existing array. This function is *pure*.
+Simple way to use filter():
+```
+console.log(SCRIPTS.filter(s => s.direction =="ttb"));
+```
+
+### Transforming with map()
+The map method transforms an array by applying a function t all of its elements and building a new array from the returned values.
+```
+function map(array, transform) {
+    let mapped = [];
+    for (let element of array) {
+        mapped.push(transform(element));
+    }
+    return mapped;
+}
+let rtlScripts = SCRIPTS.filter(s => s.direction == "rtl");
+console.log(map(rtlScripts, s => s.name));
+// → ["Adlam", "Arabic", "Imperial Aramaic", …]
+```
+
+### Summarizing with reduce()
+The *reduce()* method builds a value by repeatedly taking a single element from the array and combining it with the current value.
